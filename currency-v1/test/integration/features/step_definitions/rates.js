@@ -37,8 +37,7 @@ module.exports = function() {
 	});
 
 	this.When(/^I request all exchange rates for (.*)$/, {timeout: 60 * 1000}, function(date, callback) {
-		this.apickli.queryParameters.date = date;
-		this.apickli.get('/rates', callback);
+		this.apickli.get('/${date}', callback);
 	});
 
 	this.When(/^I request all exchange rates with (.{3}) as the base currency for (.*)$/, {timeout: 60 * 1000}, function(base, date, callback) {
