@@ -9,10 +9,7 @@
 			<Step>
 				<Name>AssignMessage.SetResponseContentTypeToJson</Name>
 			</Step>
-			<Step>
-				<Name>ExtractVariables.GetTargetErrorMessage</Name>
-				<Condition>(request != null) AND (request.content != null)</Condition>
-			</Step>
+			
 			<Step>
 				<Name>AssignMessage.SetTarget422ErrorVariables</Name>
 			</Step>
