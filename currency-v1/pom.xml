@@ -256,7 +256,7 @@
 						<configuration>
 							<executable>node</executable>
 							<commandlineArgs>
-								./node_modules/apigeelint/cli.js -s ./apiproxy -f table
+								./node_modules/apigeelint/cli.js -s ./apiproxy -f table.js
 							</commandlineArgs>
 						</configuration>
 					</execution>
