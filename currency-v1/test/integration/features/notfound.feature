@@ -5,4 +5,4 @@ Feature: Resource not found
 
 	Scenario: I should get an error when I request non-existing resources
 		When I request a non-existing API resource
-		Then I should get a 404 error with "Resource not found" message and code "404.01.001"
+		Then response code should be 404
