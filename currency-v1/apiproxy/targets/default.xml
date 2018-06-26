@@ -11,7 +11,7 @@
 			</Step>
 			<Step>
 				<Name>ExtractVariables.GetTargetErrorMessage</Name>
-				<Condition>request.content != null</Condition>
+				<Condition>(request != null) AND (request.content != null)</Condition>
 			</Step>
 			<Step>
 				<Name>AssignMessage.SetTarget422ErrorVariables</Name>
