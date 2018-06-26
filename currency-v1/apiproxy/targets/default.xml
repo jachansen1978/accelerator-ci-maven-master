@@ -50,7 +50,7 @@
 	</PostFlow>
 
 	<HTTPTargetConnection>
-		<URL>https://data.fixer.io/api/{flow.target.resource}?access_key={accessKey}</URL>
+		<URL>https://data.fixer.io/api/{flow.target.resource}?access_key=${accessKey}</URL>
 		<Properties>
 	      <Property name="io.timeout.millis">60000</Property>
 	    </Properties>
